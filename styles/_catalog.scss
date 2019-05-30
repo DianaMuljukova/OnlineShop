@@ -1,0 +1,150 @@
+.decore__color {
+  color: $decore-color;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+///
+
+.wrapper__catalog {
+  width: 100%;
+  background-color: $background-color;
+  padding: 0 15px;
+
+
+  .catalog {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 80px;
+
+
+    .title {
+      padding: 50px 0;
+
+      h1 {
+        font-size: 34px;
+
+      }
+    }
+
+    &__row {
+      display: flex;
+      justify-content: space-between;
+
+      .catalog__item {
+        background-color: white;
+        margin-right: 30px;
+        width: 270px;
+        padding: 20px;
+        font-weight: bold;
+        position:  relative;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        p {
+          margin: 0;
+          line-height: 3;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.catalog__picture {
+  transition: 0.5s;
+}
+
+.catalog__item:hover {
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.catalog__item:hover .catalog__picture {
+  transform: scale(0.5) translateY(-80px);
+  transition: 0.5s;
+}
+
+.catalog__item:hover .open__item {
+  transform: scaleY(1);
+  top: 150px;
+  transition: 0.5s;
+}
+
+
+.open__item {
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  left: 0;
+  top: 200px;
+  box-sizing: border-box;
+  width: 270px;
+  transform: scale(0);
+  transition: 0.5s;
+
+  .item_colors {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #f0f2f4;
+    padding: 10px 0;
+
+    .circle__link {
+      margin-right: 8px;
+
+      .circle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+
+      }
+    }
+
+
+
+    .circle:last-child {
+      margin-right: 0;
+    }
+
+    .red {
+      background-color: #e94650;
+    }
+
+    .gray {
+      background-color: #43525d;
+    }
+
+    .blue {
+      background-color: #44c1ff;
+    }
+
+    .green {
+      background-color: #2fdc7a;
+    }
+  }
+
+  .catalog__item__icons {
+    margin: 40px 0 20px 0;
+
+    a {
+      margin-right: 30px;
+    }
+
+    a:last-child {
+      margin-right: 0;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+$font-color: #5b6975;
+$decore-color: #ff7013;
+$background-color: #f6f8f9;
+
+body, html {
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  color: $font-color;
+}
+
+a {
+  text-decoration: none;
+  color: $font-color;
+}
+
+a:hover {
+  color: $decore-color;
+  cursor: pointer;
+}
+
+a:active {
+  color: darken($decore-color, 10%);
+}
+
+div, section {
+  box-sizing: border-box;
+}
+
+@import "header";
+@import "mainPage";
+@import "catalog";
+@import "load";
+@import "adv";
+@import "sales";
+@import "news";
+@import "footer";
+
+@media screen and (max-width: 1440px) {
+  .social__media,
+  .main__page,
+  header,
+  .catalog,
+  footer,
+  .load,
+  .sales,
+  .news,
+  .adv {
+    width: 1070px;
+  }
+
+  .catalog__row {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .social__media,
+  .main__page,
+  header,
+  .catalog,
+  footer,
+  .load,
+  .sales,
+  .news,
+  .adv {
+    width: 100%;
+  }
+
+
+  .catalog__item:last-child {
+    display: none;
+  }
+
+  .catalog__item {
+
+  }
+
+
+  .wrapper__adv {
+    display: none;
+  }
+
+}

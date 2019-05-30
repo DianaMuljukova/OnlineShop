@@ -1,0 +1,34 @@
+.wrapper__main {
+  width: 100%;
+  background: url("../images/bg/bg1.png") no-repeat;
+  background-size: cover;
+  padding: 0 15px;
+
+  .main__page {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 200px 140px;
+    box-sizing: border-box;
+
+    h1 {
+      color: $decore-color;
+      font-size: 40px;
+    }
+
+    &__title {
+      font-weight: bold;
+    }
+
+    .make__order {
+      margin: 50px 0 0 20px;
+      span {
+        margin-right: 20px;
+
+        img {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
