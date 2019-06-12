@@ -2,62 +2,48 @@
   color: $decore-color;
 }
 
-.hidden {
-  opacity: 0;
-}
-
-///
-
-.wrapper__catalog {
-  width: 100%;
-  background-color: $background-color;
-  padding: 0 15px;
 
 
-  .catalog {
-    width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 80px;
+.catalog {
+  text-align: center;
+  margin-bottom: 80px;
 
+  .title {
+    margin-bottom: 50px;
 
-    .title {
-      padding: 50px 0;
+    h1 {
+      font-size: 34px;
 
-      h1 {
-        font-size: 34px;
-
-      }
     }
+  }
 
-    &__row {
-      display: flex;
-      justify-content: space-between;
+  &__row {
+    display: flex;
+    justify-content: space-between;
 
-      .catalog__item {
-        background-color: white;
-        margin-right: 30px;
-        width: 270px;
-        padding: 20px;
-        font-weight: bold;
-        position:  relative;
+    .catalog__item {
+      background-color: white;
+      margin-right: 30px;
+      width: 270px;
+      padding: 20px;
+      font-weight: bold;
+      position:  relative;
 
-        &:last-child {
-          margin-right: 0;
-        }
+      &:last-child {
+        margin-right: 0;
+      }
 
-        p {
-          margin: 0;
-          line-height: 3;
-          font-size: 20px;
-        }
+      p {
+        margin: 0;
+        line-height: 3;
+        font-size: 20px;
       }
     }
   }
-}
 
-.catalog__picture {
-  transition: 0.5s;
+  &__picture {
+    transition: 0.5s;
+  }
 }
 
 .catalog__item:hover {

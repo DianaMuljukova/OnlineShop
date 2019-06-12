@@ -1,26 +1,19 @@
-.wrapper__load {
-  width: 100%;
-  background-color: $background-color;
-  padding: 0 15px;
+.load {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 
-  .load {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    background-color: white;
+  .dots {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $decore-color;
+    margin-right: 10px;
+  }
 
-    .dots {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: $decore-color;
-      margin-right: 10px;
-    }
-
-    .dots:last-child {
-      margin-right: 0;
-    }
+  .dots:last-child {
+    margin-right: 0;
   }
 }

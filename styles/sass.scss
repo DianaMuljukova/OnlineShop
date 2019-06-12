@@ -14,7 +14,7 @@ a {
   color: $font-color;
 }
 
-a:hover {
+a:hover{
   color: $decore-color;
   cursor: pointer;
 }
@@ -23,8 +23,28 @@ a:active {
   color: darken($decore-color, 10%);
 }
 
+.main {
+  padding: 50px 0 50px 0;
+}
+
 div, section {
   box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  background-color:  $background-color;
+}
+
+.white {
+  background-color: white;
+
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 @import "header";
@@ -35,8 +55,12 @@ div, section {
 @import "sales";
 @import "news";
 @import "footer";
+@import "example";
+@import "directory";
 
-@media screen and (max-width: 1440px) {
+
+
+@media screen and (max-width: 1200px) {
   .social__media,
   .main__page,
   header,
@@ -45,40 +69,82 @@ div, section {
   .load,
   .sales,
   .news,
-  .adv {
-    width: 1070px;
+  .adv,
+  .example,
+  .directory {
+    width: 100%;
   }
 
   .catalog__row {
     margin: 0 auto;
   }
+
+  header {
+    nav {
+      margin-right: 250px;
+    }
+  }
+.example__description {
+  .choose__details {
+    flex-direction: column;
+  }
+  .choose__details__quantity {
+    padding: 0;
+  }
+}
+
+  .inner-wrap {
+    grid-template-columns: repeat(2, 270px);
+    width: 570px;
+  }
+
+  .block {
+    width: 570px;
+  }
+
+  .catalog__card {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 1024px) {
   .social__media,
   .main__page,
-  header,
+  .header__menu,
   .catalog,
-  footer,
+  .footer__block,
   .load,
   .sales,
   .news,
-  .adv {
+  .adv,
+  .example,
+  .directory {
     width: 100%;
   }
 
-
-  .catalog__item:last-child {
-    display: none;
+  .header__menu {
+    nav {
+      margin-right: 250px;
+    }
   }
 
-  .catalog__item {
+  .banner {
+    background-position: -200px;
+  }
 
+  .sales__row {
+    justify-content: center;
+  }
+
+  .sales__item {
+    margin-right: 20px;
   }
 
 
-  .wrapper__adv {
+  .catalog__card {
     display: none;
   }
 
 }
+

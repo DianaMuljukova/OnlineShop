@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/sass.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="wrapper white">
+    <section class="social__media inner">
+        <div class="feedback">
+            <div class="feedback__block">
+                <img src="images/icons/mail.png" alt="иконка Email">
+                <p class="feedback__item">info@shopy.com</p>
+            </div>
+
+            <div class="feedback__block">
+                <img src="images/icons/phone.png" alt="иконка телефон">
+                <p class="feedback__item">453 - 5553 - 996</p>
+            </div>
+        </div>
+
+        <div>
+            <a class="icons" href="#"><img src="images/icons/fb.png" alt="иконка Facebook"></a>
+            <a class="icons" href="#"><img src="images/icons/twitter.png" alt="иконка Twitter"></a>
+            <a class="icons" href="#"><img src="images/icons/google.png" alt="иконка Google"></a>
+            <a class="icons" href="#"><img src="images/icons/instagram.png" alt="иконка Instagram"></a>
+        </div>
+    </section>
+
+    <div class="header__menu inner">
+        <img src="images/logo/logo1.png">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Hot Deals</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div>
+            <a class="icons" href="#"><img src="images/icons/search.png"></a>
+            <a class="icons" href="#"><img src="images/icons/profile.png"></a>
+            <a class="icons" href="#"><img src="images/icons/trash.png"></a>
+        </div>
+    </div>
+
+</header>
+
+<main class="wrapper main">
+    <div class="directory inner">
+        <section class="directory__filter">
+            <form>
+                <section class="directory__filter__categories white">
+                    <h1 class="decore__color">
+                        Categories
+                    </h1>
+                    <ul>
+                        <a href="#"><li>
+                            Man
+                        </li></a>
+                        <a href="#"><li>
+                            Women
+                        </li></a>
+                        <a href="#"><li>
+                            Children
+                        </li></a>
+                        <a href="#"><li>
+                            Hot deals
+                        </li></a>
+                    </ul>
+                </section>
+
+                <section class="directory__filter__price-filter white">
+
+                    <h1 class="decore__color">
+                        Price filter
+                    </h1>
+
+                    <input type="range" id="dayscount" name="dayscount" min="100" max="1000" step="1">
+                    <div class="directory__filter__price-filter__text">
+                        <span>From</span>
+                        <input type="text" class="directory__filter__price-filter__input">
+                        <span>To</span>
+                        <input type="text" class="directory__filter__price-filter__input">
+                    </div>
+                </section>
+
+                <section class="directory__filter__sizes white">
+                    <h1 class="decore__color">
+                        Sizes
+                    </h1>
+                    <label>
+                        <input type="radio" name="size" value="small" class="ratio">
+                        <span class="checkpoint"></span>
+                        Small
+                    </label><br>
+                    <label>
+                        <input type="radio" name="size" value="medium" class="ratio">
+                        <span class="checkpoint"></span>
+                        Medium
+                    </label><br>
+                    <label>
+                        <span class="checkpoint"></span>
+                        <input type="radio" name="size" value="large" class="ratio">
+                        Large
+                    </label><br>
+                    <label>
+                        <input type="radio" name="size" value="xl" class="ratio">
+                        <span class="checkpoint"></span>
+                        X Large
+                    </label><br>
+                </section>
+
+                <section class="directory__filter__brands white">
+                    <h1 class="decore__color">
+                        Brands
+                    </h1>
+                    <label>
+                        <input type="radio" name="brand" value="reebok" class="ratio">
+                        <span class="checkpoint"></span>
+                        Reebok
+                    </label><br>
+                    <label>
+                        <span class="checkpoint"></span>
+                        <input type="radio" name="brand" value="addidas" class="ratio">
+                        Addidas
+                    </label><br>
+                    <label>
+                        <input type="radio" name="brand" value="nike" class="ratio">
+                        <span class="checkpoint"></span>
+                        Nike
+                    </label><br>
+                    <label>
+                        <input type="radio" name="brand" value="active" class="ratio">
+                        <span class="checkpoint"></span>
+                        Active
+                    </label><br>
+                </section>
+            </form>
+        </section>
+
+        <section class="directory__catalog">
+
+            <div class="catalog__row inner-wrap">
+                <div class="catalog__item">
+                    <img src="images/catalog/product1.png" alt="Красное пальто" class="catalog__picture">
+                    <a href="#"><p>Reebok Track Jacket</p></a>
+                    <p class="decore__color">100$</p>
+
+
+                    <div class="open__item">
+
+                        <p>sizes : s - m - l - xl</p>
+                        <div class="item_colors">
+                            <a href="#" class="circle__link"><div class="circle red"></div></a>
+                            <a href="#" class="circle__link"><div class="circle gray"></div></a>
+                            <a href="#" class="circle__link"><div class="circle blue"></div></a>
+                            <a href="#" class="circle__link"><div class="circle green"></div></a>
+                        </div>
+                        <div class="catalog__item__icons">
+                            <a href="#"><img src="images/icons/share.png"></a>
+                            <a href="#"><img src="images/icons/add.png"></a>
+                            <a href="#"><img src="images/icons/like.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="catalog__item">
+                    <img src="images/catalog/product2.png" alt="Красное пальто" class="catalog__picture">
+                    <a href="#"><p>Reebok Track Jacket</p></a>
+                    <p class="decore__color">100$</p>
+
+                    <div class="open__item">
+
+                        <p>sizes : s - m - l - xl</p>
+                        <div class="item_colors">
+                            <a href="#" class="circle__link"><div class="circle red"></div></a>
+                            <a href="#" class="circle__link"><div class="circle gray"></div></a>
+                            <a href="#" class="circle__link"><div class="circle blue"></div></a>
+                            <a href="#" class="circle__link"><div class="circle green"></div></a>
+                        </div>
+                        <div class="catalog__item__icons">
+                            <a href="#"><img src="images/icons/share.png"></a>
+                            <a href="#"><img src="images/icons/add.png"></a>
+                            <a href="#"><img src="images/icons/like.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="catalog__item">
+                    <img src="images/catalog/product2.png" alt="Красное пальто" class="catalog__picture">
+                    <a href="#"><p>Reebok Track Jacket</p></a>
+                    <p class="decore__color">100$</p>
+
+                    <div class="open__item">
+
+                        <p>sizes : s - m - l - xl</p>
+                        <div class="item_colors">
+                            <a href="#" class="circle__link"><div class="circle red"></div></a>
+                            <a href="#" class="circle__link"><div class="circle gray"></div></a>
+                            <a href="#" class="circle__link"><div class="circle blue"></div></a>
+                            <a href="#" class="circle__link"><div class="circle green"></div></a>
+                        </div>
+                        <div class="catalog__item__icons">
+                            <a href="#"><img src="images/icons/share.png"></a>
+                            <a href="#"><img src="images/icons/add.png"></a>
+                            <a href="#"><img src="images/icons/like.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="catalog__item">
+                    <img src="images/catalog/product4.png" alt="Красное пальто" class="catalog__picture">
+                    <a href="#"><p>Reebok Track Jacket</p></a>
+                    <p class="decore__color">100$</p>
+
+                    <div class="open__item">
+                        <p>sizes : s - m - l - xl</p>
+                        <div class="item_colors">
+                            <a href="#" class="circle__link"><div class="circle red"></div></a>
+                            <a href="#" class="circle__link"><div class="circle gray"></div></a>
+                            <a href="#" class="circle__link"><div class="circle blue"></div></a>
+                            <a href="#" class="circle__link"><div class="circle green"></div></a>
+                        </div>
+                        <div class="catalog__item__icons">
+                            <a href="#"><img src="images/icons/share.png"></a>
+                            <a href="#"><img src="images/icons/add.png"></a>
+                            <a href="#"><img src="images/icons/like.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__item">
+                    <img src="images/catalog/product2.png" alt="Красное пальто" class="catalog__picture">
+                    <a href="#"><p>Reebok Track Jacket</p></a>
+                    <p class="decore__color">100$</p>
+
+                    <div class="open__item">
+
+                        <p>sizes : s - m - l - xl</p>
+                        <div class="item_colors">
+                            <a href="#" class="circle__link"><div class="circle red"></div></a>
+                            <a href="#" class="circle__link"><div class="circle gray"></div></a>
+                            <a href="#" class="circle__link"><div class="circle blue"></div></a>
+                            <a href="#" class="circle__link"><div class="circle green"></div></a>
+                        </div>
+                        <div class="catalog__item__icons">
+                            <a href="#"><img src="images/icons/share.png"></a>
+                            <a href="#"><img src="images/icons/add.png"></a>
+                            <a href="#"><img src="images/icons/like.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__item">
+                    <img src="images/catalog/product2.png" alt="Красное пальто" class="catalog__picture">
+                    <a href="#"><p>Reebok Track Jacket</p></a>
+                    <p class="decore__color">100$</p>
+
+                    <div class="open__item">
+
+                        <p>sizes : s - m - l - xl</p>
+                        <div class="item_colors">
+                            <a href="#" class="circle__link"><div class="circle red"></div></a>
+                            <a href="#" class="circle__link"><div class="circle gray"></div></a>
+                            <a href="#" class="circle__link"><div class="circle blue"></div></a>
+                            <a href="#" class="circle__link"><div class="circle green"></div></a>
+                        </div>
+                        <div class="catalog__item__icons">
+                            <a href="#"><img src="images/icons/share.png"></a>
+                            <a href="#"><img src="images/icons/add.png"></a>
+                            <a href="#"><img src="images/icons/like.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__item">
+                    <img src="images/catalog/product2.png" alt="Красное пальто" class="catalog__picture">
+                    <a href="#"><p>Reebok Track Jacket</p></a>
+                    <p class="decore__color">100$</p>
+
+                    <div class="open__item">
+
+                        <p>sizes : s - m - l - xl</p>
+                        <div class="item_colors">
+                            <a href="#" class="circle__link"><div class="circle red"></div></a>
+                            <a href="#" class="circle__link"><div class="circle gray"></div></a>
+                            <a href="#" class="circle__link"><div class="circle blue"></div></a>
+                            <a href="#" class="circle__link"><div class="circle green"></div></a>
+                        </div>
+                        <div class="catalog__item__icons">
+                            <a href="#"><img src="images/icons/share.png"></a>
+                            <a href="#"><img src="images/icons/add.png"></a>
+                            <a href="#"><img src="images/icons/like.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__item">
+                    <img src="images/catalog/product2.png" alt="Красное пальто" class="catalog__picture">
+                    <a href="#"><p>Reebok Track Jacket</p></a>
+                    <p class="decore__color">100$</p>
+
+                    <div class="open__item">
+
+                        <p>sizes : s - m - l - xl</p>
+                        <div class="item_colors">
+                            <a href="#" class="circle__link"><div class="circle red"></div></a>
+                            <a href="#" class="circle__link"><div class="circle gray"></div></a>
+                            <a href="#" class="circle__link"><div class="circle blue"></div></a>
+                            <a href="#" class="circle__link"><div class="circle green"></div></a>
+                        </div>
+                        <div class="catalog__item__icons">
+                            <a href="#"><img src="images/icons/share.png"></a>
+                            <a href="#"><img src="images/icons/add.png"></a>
+                            <a href="#"><img src="images/icons/like.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__item catalog__card">
+                    <img src="images/catalog/product2.png" alt="Красное пальто" class="catalog__picture">
+                    <a href="#"><p>Reebok Track Jacket</p></a>
+                    <p class="decore__color">100$</p>
+
+                    <div class="open__item">
+
+                        <p>sizes : s - m - l - xl</p>
+                        <div class="item_colors">
+                            <a href="#" class="circle__link"><div class="circle red"></div></a>
+                            <a href="#" class="circle__link"><div class="circle gray"></div></a>
+                            <a href="#" class="circle__link"><div class="circle blue"></div></a>
+                            <a href="#" class="circle__link"><div class="circle green"></div></a>
+                        </div>
+                        <div class="catalog__item__icons">
+                            <a href="#"><img src="images/icons/share.png"></a>
+                            <a href="#"><img src="images/icons/add.png"></a>
+                            <a href="#"><img src="images/icons/like.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="load block">
+
+                <div class="dots">
+                </div>
+                <div class="dots">
+                </div>
+                <div class="dots">
+                </div>
+            </section>
+        </section>
+    </div>
+</main>
+
+<footer class="wrapper white">
+    <div class="footer__block inner">
+        <div>
+            <img src="images/logo/logo1.png">
+            <p>
+                shopy c 2015 . your copy right here
+            </p>
+        </div>
+
+        <ul>
+            <li><a href="#">join us</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">support</a></li>
+        </ul>
+
+        <ul>
+            <li><a>our feed</a></li>
+            <li><a href="#">terms and conditions</a></li>
+            <li><a>terms and conditions</a></li>
+        </ul>
+
+        <ul>
+            <li><a>join us</a></li>
+            <li><a>live support</a></li>
+        </ul>
+
+        <div class="payment">
+            <a><p>Payment Methods</p></a>
+            <img src="images/icons/cards.png">
+        </div>
+    </div>
+</footer>
+<script src="js.js"></script>
+</body>
+</html>

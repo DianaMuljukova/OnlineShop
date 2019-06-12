@@ -8,11 +8,6 @@
 
 ///
 
-.wrapper__header {
-  width: 100%;
-  padding: 0 15px;
-}
-
 .social__media {
   width: 1200px;
   margin: 0 auto;
@@ -38,20 +33,20 @@
 
 }
 
-header {
-  width: 1440px;
-  margin: 40px auto;
+.header__menu {
+  margin: 0 auto;
+  padding: 40px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 20px;
+  border-bottom: 1px solid #f0f2f4;
 
   nav {
-    margin-right: 500px;
+    margin-right: 450px;
 
     a {
-      text-decoration: none;
-      color: $font-color;
+     
       margin-right: 22px;
       }
     }

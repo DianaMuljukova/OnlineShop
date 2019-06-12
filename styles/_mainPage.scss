@@ -1,18 +1,16 @@
-.wrapper__main {
-  width: 100%;
+.banner {
   background: url("../images/bg/bg1.png") no-repeat;
   background-size: cover;
-  padding: 0 15px;
+}
 
   .main__page {
-    width: 1200px;
-    margin: 0 auto;
     padding: 200px 140px;
     box-sizing: border-box;
 
     h1 {
       color: $decore-color;
       font-size: 40px;
+      margin: 0;
     }
 
     &__title {
@@ -30,5 +28,4 @@
       }
     }
   }
-}
 

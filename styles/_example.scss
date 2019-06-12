@@ -1,0 +1,111 @@
+
+
+.example {
+  display: flex;
+  padding: 100px 85px 135px 85px;
+  box-sizing: border-box;
+
+  &__photo {
+    text-align: center;
+    margin:  0 20px 0 0;
+  }
+
+  .details {
+    display: flex;
+    margin-top: 50px;
+
+    .miniature {
+      width: 100px;
+      background-color: $background-color;
+      margin-right: 15px;
+      padding: 10px;
+
+      &:active {
+        background-color: $decore-color;
+        cursor: pointer;
+      }
+
+      &:active img {
+        opacity: 0.2;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__description__title {
+    font-weight: bold;
+  }
+
+
+  &__description__text {
+    
+  }
+
+  &__description {
+
+    h1 {
+      color: $decore-color;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .choose__details {
+      border-top: 1px solid #f0f2f4;
+      border-bottom: 1px solid #f0f2f4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__size {
+        display: flex;
+
+
+        p {
+          margin-right: 20px;
+        }
+      }
+
+      &__quantity {
+        display: flex;
+
+        padding: 20px 0;
+
+        p {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .order {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+
+      &__price {
+        display: flex;
+
+        p {
+          margin-right: 20px;
+        }
+      }
+
+      &__ord {
+
+        img {
+          margin-right: 10px;
+        }
+
+        .radius {
+          border-radius: 30px;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
